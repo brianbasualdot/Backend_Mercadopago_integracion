@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="header">MercagoPago Online</header>
+    <img src="./img/Mercado-pago-portada-1.jpg" alt="">
+    <div class="box">
+        <p>Desea pagar ahora mismo?</p>
+      <button class="btn btn1" href="checkout">Pagar</button>
+      <button class="btn btn2" href="#">Cancelar</button>
+    </div>
+    <footer class="footer"><strong>Proyecto de backend</strong> Github: brianbasualdot</footer>
+    <script>
+      const checkoutButton = document.getElementById("checkout");
+
+      checkoutButton.addEventListener("click", async () => {
+        const res = await fetch("/create-order", {
+          method: "POST",
+        });
+        const data = await res.json();
+        window.location.href = data.init_point;
+      });
+    </script>
+  </body>
+</html>
