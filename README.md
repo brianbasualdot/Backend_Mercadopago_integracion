@@ -4,9 +4,9 @@
 
 * NodeJs
 * Nodemon
-> Dotenv
-> Morgan
-> Html & Css
-> Javascript
+* Dotenv
+* Morgan
+* Html & Css
+* Javascript
 
 ![Tumbail](./portada.png)
