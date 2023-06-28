@@ -2,8 +2,8 @@
 
 ### Tecnologias Implementadas
 
-> NodeJs
-> Nodemon
+* NodeJs
+* Nodemon
 > Dotenv
 > Morgan
 > Html & Css
